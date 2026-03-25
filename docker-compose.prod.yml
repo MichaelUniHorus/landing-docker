@@ -8,7 +8,7 @@ services:
       - .env
     volumes:
       - static_volume:/app/staticfiles
-      - sqlite_data:/app
+      - sqlite_data:/app/db.sqlite3
     restart: unless-stopped
 
   nginx:
